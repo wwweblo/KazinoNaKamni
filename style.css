@@ -4,6 +4,10 @@
   font-family: 'Montserrat', sans-serif;
   color:white;
 }
+*::selection{
+  background-color:#6eb5c0;
+  color: #505160;
+}
 
 header{
   background-color:#E2E8E4;
@@ -74,12 +78,15 @@ header{
   padding-left: 10px;
 }
 
-.vk{
+a{
   background-color:#E2E8E4;
   color: #505160;
   text-decoration: none;
 }
-
-.vk:visited{
-color:#6eb5c0;
+a:visited {
+  color:#6eb5c0;
+}
+a:hover {
+  background-color: #FFCCBB;
+  color: white;
 }
