@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <html>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>RockGame</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel = 'stylesheet' href = 'style.css'>
+        <script src = 'script.js'></script>
+    </head>
+        
+        <body>
+          <header>rock Game  <a class = 'vk' href = 'https://vk.com/i_am_seno42' target = '_blank'> о нас</a></header>
+          <main>
+            <aside class = 'rules'>
+
+              <script src = 'script.js'></script>
+              <button class = 'button' type="submit" id="submit" onclick="registration();">Регистрация</button>
+              <button class = 'button' type="submit" id="submit" onclick="game();">Начать</button>
+              
+              
+              <h3 class = 'rules'>Правила</h3>
+                <ol class = 'rules'>
+                  <li class = 'rules'>С самого начала у всех игроков по одинаковое колличество камней.</li>
+                      <li class = 'rules'>Каждый ставит столько камней, сколько позволяет "бюджет".</li>
+                      <li class = 'rules'>Игроки начинают поочередно гадать, сколько камней поставил опонент (чёт/нечет).</li>
+                      <li class = 'rules'>если игрок угадал, то он задирает у противника столько камней, сколько поставил противник,<br> 
+                      если же не угадал, то отдаёт столько, сколько поставил опонент</li>
+                      <li class = 'rules'>после чего снова ставят исходя из бюджета.</li>
+                      <li class = 'rules'>это продолжается до тех пор, пока у кого-то не кончатся камни</li>
+                  </ol>
+             </aside>
+            
+            <div class = 'player-info'>Игрок 1:
+              <p class = "player-name player-info"> </p>
+              Ваши камни
+              <p class = 'player-count player-info'>  </p>
+            </div>
+            
+            <div class = 'computer-info'>Игрок 2:
+              <p class = "computer-name computer-info"> </p>
+              камни Противника
+              <p class = 'computer-count computer-info'>  </p>
+            </div>
+            <div id = 'conclusion'></div>
+      
+          </main>
+        </body>
+      </html>
+</html>
