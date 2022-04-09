@@ -1,3 +1,13 @@
+const themeButton = document.querySelector('.theme-button');
+const theme = document.querySelector('#css-link');
+ function changeTheme() {
+  if (theme.getAttribute('href') == 'styles/light-thame.css') {
+    theme.href = 'styles/dark-thame.css';
+  } else {
+    theme.href = "styles/light-thame.css";
+  }
+};
+
 function registration(){
     //Ввод ника
     let playerName = prompt('Придумайте себе имя','Player_1');
@@ -10,9 +20,9 @@ function registration(){
     let computerName = computerNameBase[computerNameNum];
     let computerNamePlace = document.querySelector('.computer-name');
     computerNamePlace.textContent = computerName;
-  } 
+    } 
   
-   function game(){
+function game(){
         //игрок выбирает стартовое колличество камней
     starterCount = Number(prompt('Сколько камней будет у игроков в начале?', 10));
     var playerCount = starterCount;
@@ -30,12 +40,18 @@ function registration(){
             //игрок делает ставку
         let playerBet = Number(prompt('Поставьте насколько камней из вашего "запаса"',3));
        
-        if (playerCount - playerBet < 0)
+        if (playerCount - playerBet < 0){
             alert('Для такой ставки у вас недостаточно камней');
-        if (playerBet % 1 != 0)
+            break;
+        }
+        if (playerBet % 1 != 0){
           alert('за попытку разломать камень вас выгоняют из казино');
-        if (playerBet < 1)
+          break;
+        }
+        if (playerBet < 1){
             alert('а ты хитёр');
+            break;
+        }
         
             //определяется, четность/неченность ставки
         if (playerBet % 2 == 00) cond = true;
@@ -100,3 +116,5 @@ function registration(){
   console.log('-------------------')
       }
     }
+
+    

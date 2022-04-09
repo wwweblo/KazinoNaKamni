@@ -1,0 +1,105 @@
+*{
+  background-color: #6eb5c0;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+*::selection{
+  background-color:#6eb5c0;
+  color: #505160;
+}
+
+header{
+  background-color:#E2E8E4;
+  color: #505160;
+  margin-bottom: 35px;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 25px;
+  
+}
+.name{
+  border-radius:15px;
+  margin-right: 70em;
+  
+  text-align:center;
+  padding: 0.5em;
+}
+
+  .player-info{
+    border: solid #FFCCBB 5px;
+    background-color: #FFCCBB;
+    border-radius:25px;
+    margin-right: 70em;
+    text-align:center;
+    margin-bottom:35px;
+  }
+  .computer-info{
+    border: solid #006c84 5px;
+    background-color: #006c84;
+    border-radius:25px;
+    margin-right: 70em;
+    text-align:center;
+}
+
+.button {
+    background-color: #6eb5c0;
+    border: none;
+  border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 5px;
+    cursor: pointer;
+}
+
+.theme-button {
+  background-color: #6eb5c0;
+  border: none;
+border-radius: 25px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.rules {
+  width: 85%;
+  float: right;
+  text-align: left;
+  border: solid #E2E8E4 5px;
+  border-radius:25px;
+  background-color: #E2E8E4;
+  color: #505160;
+  padding-left: 15px;
+  margin-bottom: 14px;
+}
+
+.conclusionCss{
+  text-align: left;
+  border: solid #E2E8E4 5px;
+  border-radius:15px;
+  background-color: #E2E8E4;
+  color: #505160;
+  margin-top: 55px;
+  padding: 3px;
+  padding-left: 10px;
+}
+
+a{
+  background-color:#E2E8E4;
+  color: #505160;
+  text-decoration: none;
+}
+a:visited {
+  color:#6eb5c0;
+}
+a:hover {
+  background-color: #FFCCBB;
+  color: white;
+}

@@ -7,16 +7,20 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&display=swap" rel="stylesheet">
-        <link rel = 'stylesheet' href = 'style.css'>
+        <link rel = 'stylesheet' href = 'styles/light-thame.css' id = 'css-link'>
         <script src = 'script.js'></script>
     </head>
         
         <body>
-          <header>rock Game  <a class = 'vk' href = 'https://vk.com/i_am_seno42' target = '_blank'> о нас</a></header>
+          <header>
+            rock Game  
+            <a class = 'vk' href = 'https://vk.com/i_am_seno42' target = '_blank'> | о нас</a>
+            <button  onclick = 'changeTheme()' class = 'theme-button'> сменить тему</button>
+          </header>
+
           <main>
             <aside class = 'rules'>
 
-              <script src = 'script.js'></script>
               <button class = 'button' type="submit" id="submit" onclick="registration();">Регистрация</button>
               <button class = 'button' type="submit" id="submit" onclick="game();">Начать</button>
               
@@ -44,6 +48,7 @@
               камни Противника
               <p class = 'computer-count computer-info'>  </p>
             </div>
+
             <div id = 'conclusion'></div>
       
           </main>
