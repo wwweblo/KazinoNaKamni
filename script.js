@@ -1,13 +1,14 @@
 const themeButton = document.querySelector('.theme-button');
 const theme = document.querySelector('#css-link');
+//изменение темы сайта
  function changeTheme() {
-  if (theme.getAttribute('href') == 'styles/light-thame.css') {
-    theme.href = 'styles/dark-thame.css';
+  if (theme.getAttribute('href') == 'light-thame.css') {
+    theme.href = 'dark-thame.css';
   } else {
-    theme.href = "styles/light-thame.css";
+    theme.href = 'light-thame.css';
   }
 };
-
+//регистрация на сайте
 function registration(){
     //Ввод ника
     let playerName = prompt('Придумайте себе имя','Player_1');
@@ -21,7 +22,7 @@ function registration(){
     let computerNamePlace = document.querySelector('.computer-name');
     computerNamePlace.textContent = computerName;
     } 
-  
+//запуск сессии
 function game(){
         //игрок выбирает стартовое колличество камней
     starterCount = Number(prompt('Сколько камней будет у игроков в начале?', 10));
