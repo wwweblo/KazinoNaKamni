@@ -64,6 +64,7 @@
       display: inline-block;
       font-size: 16px;
       cursor: pointer;
+      float: right;
   }
   .rules {
     width: 85%;
@@ -78,20 +79,23 @@
   }
   
   .conclusionCss{
-    text-align: left;
+    text-align: center;
     border: solid #6C8C89 5px;
     border-radius:15px;
     background-color: #6C8C89;
-    color: white;
-    margin-top: 55px;
+    color: #505160;
+    margin-top: 120px;
     padding: 3px;
     padding-left: 10px;
   }
+  
   
   a{
     background-color:#6C8C89;
     color: white;
     text-decoration: none;
+    float: right;
+    margin: 0px 10px 0px 10px;
   }
   a:visited {
     color:white;

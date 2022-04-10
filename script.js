@@ -21,9 +21,9 @@ function registration(){
     let computerName = computerNameBase[computerNameNum];
     let computerNamePlace = document.querySelector('.computer-name');
     computerNamePlace.textContent = computerName;
-    } 
-//запуск сессии
-function game(){
+  } 
+  
+   function game(){
         //игрок выбирает стартовое колличество камней
     starterCount = Number(prompt('Сколько камней будет у игроков в начале?', 10));
     var playerCount = starterCount;
@@ -41,18 +41,12 @@ function game(){
             //игрок делает ставку
         let playerBet = Number(prompt('Поставьте насколько камней из вашего "запаса"',3));
        
-        if (playerCount - playerBet < 0){
+        if (playerCount - playerBet < 0)
             alert('Для такой ставки у вас недостаточно камней');
-            break;
-        }
-        if (playerBet % 1 != 0){
+        if (playerBet % 1 != 0)
           alert('за попытку разломать камень вас выгоняют из казино');
-          break;
-        }
-        if (playerBet < 1){
+        if (playerBet < 1)
             alert('а ты хитёр');
-            break;
-        }
         
             //определяется, четность/неченность ставки
         if (playerBet % 2 == 00) cond = true;
@@ -61,6 +55,7 @@ function game(){
             //предположение противника
         var computerPred = Boolean(Math.floor(Math.random()*2));
         var computerBet = Number(Math.floor(Math.random()*computerCount));
+        console.log('computerPred --> ' + computerPred)
         console.log('computerBet --> ' + computerBet)
       
     
@@ -75,12 +70,14 @@ function game(){
          
        }else{//игрок выйграл
          playerCount += playerBet;
-         computerBet -= playerBet;
+         computerCount -= playerBet;
          alert(`you win!1! you: ${playerCount} вражина: ${computerCount}`);
          console.log("you win");
          console.log('playerCount --> ' + playerCount);
          console.log('computerCount --> ' + computerCount);
         }
+
+        if (playerCount <= 0 & computerCount <= 0) break;
         
         //компютер делает ставку
         computerBet = Math.floor(Math.random()*computerCount);
@@ -108,14 +105,13 @@ function game(){
          console.log('playerCount --> ' + playerCount);
          console.log('computerCount --> ' + computerCount);
         }
-       
-       var conclusion = document.getElementById("conclusion");
-       conclusion.classList.toggle("conclusionCss");
+        // выводит игроку итог сессии
+       var conclusion = document.querySelector('.conclusion');
+       conclusion.classList.toggle('conclusionCss');
        if (playerCount > 0 && computerCount <= 0)
-         conclusion.textContent = 'Вы выйграли';
-       else if(playerCount <= 0 && computerCount > 0) conclusion.textContent = 'Вы проиграли';
-  console.log('-------------------')
+            conclusion.textContent = 'Вы выйграли';
+       else if(playerCount <= 0 && computerCount > 0)
+            conclusion.textContent = 'Вы проиграли';
+        console.log('-------------------')
       }
     }
-
-    
