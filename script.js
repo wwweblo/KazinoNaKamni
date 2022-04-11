@@ -17,7 +17,9 @@ function registration(){
     namePlace.textContent = playerName;
   
     //Случайное имя противника
-    let computerNameBase = ['Биба', 'Боба', 'Лёлик', 'Болик', 'Жока', 'Бока','anal penetrator','Тащю Как Путин','ОпАSнЫй ВоЗрАSт', 'Мефедрон','Я ЗгРЫС ДЕДА ','I LoVE BalTikA', 'Пуssи Прокурор', 'СоЛян@я дев04кА'];
+    let computerNameBase = ['Биба', 'Боба', 'Лёлик', 'Болик', 'Жока', 'Бока','anal penetrator',
+    'Тащю Как Путин','ОпАSнЫй ВоЗрАSт', 'Мефедрон','Я ЗгРЫС ДЕДА ','I LoVE BalTikA', 'Пуssи Прокурор',
+     'СоЛян@я дев04кА'];
     let computerNameNum = Math.floor(Math.random()*computerNameBase.length);
     const computerName = computerNameBase[computerNameNum];
     let computerNamePlace = document.querySelector('.computer-name');
@@ -42,8 +44,8 @@ function registration(){
     while (playerCount > 0 && computerCount > 0 && playerCount + computerCount == 2 * starterCount){
             //игрок делает ставку
             var playerBet = Number(prompt('Поставьте насколько камней из вашего "запаса"',3));
-            while (playerBet >= playerCount || playerBet % 1 != 0 || playerBet < 1){
-             if (playerBet >= playerCount) alert('Для такой ставки у вас недостаточно камней');
+            while (playerBet > playerCount || playerBet % 1 != 0 || playerBet < 1){
+             if (playerBet > playerCount) alert('Для такой ставки у вас недостаточно камней');
              if (playerBet % 1 != 0) alert('за попытку разломать камень вас выгоняют из казино');
              if (playerBet < 1) alert('а ты хитёр');
              var playerBet = Number(prompt('Поставьте насколько камней из вашего "запаса"',3));
@@ -93,8 +95,8 @@ function registration(){
 
          //игрок делает ставку
          var playerBet = Number(prompt('Поставьте насколько камней из вашего "запаса"',3));
-         while (playerBet >= playerCount || playerBet % 1 != 0 || playerBet < 1){
-          if (playerBet >= playerCount) alert('Для такой ставки у вас недостаточно камней');
+         while (playerBet > playerCount || playerBet % 1 != 0 || playerBet < 1){
+          if (playerBet > playerCount) alert('Для такой ставки у вас недостаточно камней');
           if (playerBet % 1 != 0) alert('за попытку разломать камень вас выгоняют из казино');
           if (playerBet < 1) alert('а ты хитёр');
           var playerBet = Number(prompt('Поставьте насколько камней из вашего "запаса"',3));
