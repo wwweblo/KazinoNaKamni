@@ -25,9 +25,10 @@ a{
   margin: 0px 10px 0px 10px;
 }
 a:visited {
-  color:white;
+  color:#white;
 }
 a:hover {
+  border-radius: 25px;
   background-color: #A6ACEC;
   color: white;
 }
@@ -49,10 +50,10 @@ a:hover {
 }
 
 .button {
-    background-color: #ACE7EF;
+    background-color: #17181c;
     border: none;
     border-radius: 25px;
-    color: #505160;
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -63,10 +64,10 @@ a:hover {
 }
 
 .theme-button {
-  background-color: #ACE7EF;
+  background-color: #17181c;
   border: none;
   border-radius: 25px;
-  color: #505160;
+  color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -97,4 +98,3 @@ footer{
   padding: 3px;
   padding-left: 10px;
 }
-
