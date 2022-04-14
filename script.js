@@ -80,7 +80,7 @@ function registration(){
          console.log('computerCount --> ' + computerCount);
         }
 
-        if (playerCount <= 0 & computerCount <= 0) break;
+        if (playerCount <= 0 || computerCount <= 0) break;
         
         //компютер делает ставку
         computerBet = Math.floor(Math.random()*computerCount);
